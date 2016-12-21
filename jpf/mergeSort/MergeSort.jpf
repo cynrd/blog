@@ -1,0 +1,12 @@
+target=MergeSortOverflow
+
+classpath=${user.home}/Documents/mergeSort/bin
+sourcepath=${user.home}/Documents/mergeSort/src
+
+symbolic.method= MergeSortOverflow.binarySearch(sym#sym)
+
+listener = .symbc.SymbolicListener
+
+vm.storage.class=nil
+
+search.multiple_errors=true

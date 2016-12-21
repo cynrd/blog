@@ -1,0 +1,10 @@
+<project default="compile">
+    <target name="compile">
+        <mkdir dir="bin"/>
+        <javac  srcdir="src" 
+		destdir="bin" 
+		debug="true" 
+		debuglevel="lines,vars,source" 
+		classpath="/home/verificationglasses/Documents/jpf/jpf-symbc/build/jpf-symbc-classes.jar:/home/verificationglasses/Documents/jpf/jpf-core/build/jpf.jar"/>
+    </target>
+</project>
