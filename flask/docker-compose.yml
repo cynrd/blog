@@ -1,0 +1,8 @@
+version: '2'
+services:
+    flaskapp:
+        image: jazzdd/alpine-flask:python3
+        ports: 
+        - "127.0.0.1:80:80"
+        volumes: 
+        - .:/app
