@@ -8,4 +8,4 @@ def user(gateway, user_name):
     return response.json()
 
 if __name__ == '__main__':
-	print(user(sys.argv[1]))
+	print(user('http://localhost', sys.argv[1]))
