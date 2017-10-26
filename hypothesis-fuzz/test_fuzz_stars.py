@@ -1,3 +1,4 @@
+# Based on the example from http://hypothesis.readthedocs.io/en/latest/examples.html#fuzzing-an-http-api
 import unittest
 from hypothesis import given, assume, settings, strategies as st
 from collections import namedtuple
