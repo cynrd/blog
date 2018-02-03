@@ -1,0 +1,21 @@
+vm.insn_factory.class=gov.nasa.jpf.symbc.SymbolicInstructionFactory
+search.multiple_errors=true
+symbolic.method=push(sym);pop(sym)
+jpf.listener=gov.nasa.jpf.symbc.sequences.SymbolicSequenceListener
+
+
+target=sequences.StackDriverSequences
+
+classpath=${user.home}/blog/jpf/sequences/bin
+sourcepath=${user.home}/blog/jpf/sequences/src
+
+
+# The following JPF options are usually used for SPF as well:
+
+# no state matching
+
+vm.storage.class=nil
+
+# instruct jpf not to stop at first error
+
+search.multiple_errors=true

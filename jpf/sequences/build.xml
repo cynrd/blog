@@ -1,0 +1,14 @@
+<project default="compile">
+    <target name="compile">
+        <mkdir dir="bin"/>
+        <javac srcdir="src" destdir="bin" debug="true" debuglevel="lines,vars,source">
+            <classpath>
+                <pathelement path="/home/Documents/jpf/jpf-core/build/jpf.jar" />
+                <pathelement path="/home/Documents/jpf/jpf-core/build/jpf-classes.jar" />
+                <pathelement path="/home/Documents/jpf/jpf-symbc/build/jpf-symbc.jar" />
+                <pathelement path="/home/Documents/jpf/jpf-symbc/build/jpf-symbc-classes.jar" />
+                <pathelement path="/home/Documents/jpf/jpf-symbc/build/jpf-symbc-annotations.jar" />
+        </classpath>
+        </javac>
+    </target>
+</project>
