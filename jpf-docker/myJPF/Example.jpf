@@ -1,0 +1,28 @@
+target=examples.Example
+
+# here write your own classpath and un-comment
+classpath=/jpf/myJPF/bin
+sourcepath=/jpf/myJPF/src
+
+#symbolic.method= examples.Example.foo(sym#con)
+symbolic.method = examples.Example.foo(sym#sym)
+#symbolic.method= examples.Example.foo(con#sym)
+#symbolic.method= examples.Example.foo(con#con)
+
+#symbolic.dp=choco
+symbolic.min_int = -10
+symbolic.max_int = 10
+symbolic.debug=true
+# listener to print information (PCs, test cases) about symbolic run
+
+listener = .symbc.SymbolicListener
+
+# The following JPF options are usually used for SPF as well:
+
+# no state matching
+
+vm.storage.class=nil
+
+# instruct jpf not to stop at first error
+
+search.multiple_errors=true

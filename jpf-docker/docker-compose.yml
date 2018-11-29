@@ -1,0 +1,9 @@
+version: '2'
+services:
+  jpf:
+    build:
+      context: .
+    volumes:
+    - $PWD/myJPF:/jpf/myJPF
+    working_dir: /jpf/myJPF
+    command: bash -c "ant && /jpf/jpf-core/bin/jpf Example.jpf"
