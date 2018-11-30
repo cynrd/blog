@@ -1,7 +1,8 @@
 version: '2'
 services:
   jpf:
-    image: cynrd/jpf-symbc
+    build:
+      context: .
     volumes:
     - $PWD/myJPF:/jpf/myJPF
     working_dir: /jpf/myJPF
